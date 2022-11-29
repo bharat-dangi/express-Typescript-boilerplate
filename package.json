@@ -24,7 +24,6 @@
   "dependencies": {
     "@types/cors": "^2.8.12",
     "@types/hpp": "^0.2.2",
-    "@types/redis": "^4.0.11",
     "awilix": "^7.0.3",
     "axios": "^0.27.2",
     "colors": "^1.4.0",
@@ -36,7 +35,6 @@
     "joi": "^17.6.0",
     "mongoose": "^6.5.0",
     "newrelic": "^9.0.0",
-    "redis": "^4.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4",
     "xss-clean": "^0.1.1"

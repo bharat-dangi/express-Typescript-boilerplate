@@ -27,10 +27,9 @@ class App {
     this.initializeRoutes();
     this.initializeErrorHandling();
   }
-  private initializeDatabaseConnection(): void {
-    connectMongoDB().then(() => {
-      registerDependencies();
-    });
+  private async initializeDatabaseConnection(): Promise<void> {
+    await connectMongoDB();
+    registerDependencies();
   }
 
   private initializeMiddleware(): void {
