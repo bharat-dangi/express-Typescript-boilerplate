@@ -23,7 +23,7 @@ class App {
     this.app = express();
     this.port = port;
     this.initializeDatabaseConnection();
-    this.inititalizeMiddleware();
+    this.initializeMiddleware();
     this.initializeRoutes();
     this.initializeErrorHandling();
   }
@@ -33,7 +33,7 @@ class App {
     });
   }
 
-  private inititalizeMiddleware(): void {
+  private initializeMiddleware(): void {
     // Set security headers
     this.app.use(helmet());
 
@@ -53,7 +53,7 @@ class App {
 
   private initializeRoutes(): void {
     // router
-    this.app.use('/api', AppRouter);
+    this.app.use("/api", AppRouter);
   }
 
   private initializeErrorHandling(): void {
