@@ -53,7 +53,7 @@ class App {
 
   private initializeRoutes(): void {
     // router
-    this.app.use(AppRouter);
+    this.app.use('/api', AppRouter);
   }
 
   private initializeErrorHandling(): void {

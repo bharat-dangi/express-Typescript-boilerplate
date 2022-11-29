@@ -3,9 +3,9 @@ import { DEFAULT_CONSTANTS } from "./src/data/constants/defaults/defaults.contan
 
 require("newrelic");
 
-const port = parseInt(process.env.PORT ?? DEFAULT_CONSTANTS.DEFAULT_PORT);
+const port = process.env.PORT ?? DEFAULT_CONSTANTS.DEFAULT_PORT;
 
-const app = new App(port);
+const app = new App(Number(port));
 app.listen();
 
 process.on("unhandledRejection", (err) => {
